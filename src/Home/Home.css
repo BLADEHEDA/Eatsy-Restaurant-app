@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+@media only screen and (min-width:1px){
+ 
+    .Hero-main{
+        background: #e84242 ;
+       height: 100%;
+      padding-bottom: 10em;
+    }
+    .hero-head{
+        /* text-shadow: 1.5px 0px, 1px 0px, 0px 0px; */
+        /* font-family: "Rakkas"; */
+       
+        font-size: 26px;
+        color: red;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+
+    }
+
+}
