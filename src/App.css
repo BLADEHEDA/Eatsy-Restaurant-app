@@ -10,6 +10,7 @@
 img{
   max-width: 100%;
   height: auto;
+  /* background-image: url("../public/assets/image_product_01.jpg"); */
 }
 
 /* @media only screen(min-width:1px ){
