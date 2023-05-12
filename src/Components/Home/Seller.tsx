@@ -11,7 +11,7 @@ import burger from "/assets/image_product_01.jpg"
 import burgerA from "/assets/image_product_02.jpg"  
 import burgerB from "/assets/image_product_03.jpg"
 // the menu button  
-const MenuBtn=(props)=>{
+const MenuBtn=(props:any)=>{
     return(
         <main className="btn"  >
             <button style={props.style} 
@@ -24,7 +24,7 @@ const MenuBtn=(props)=>{
 }
 
 // BUilding the components for the diffferent menu elements and receiveing props through iit 
-const Menu=(props)=>{
+const Menu=(props:any)=>{
     return(
         <main className="menu pb-[1.5em] ">
             <section className="maini-menu-div bg-[#FEFEFE] rounded-[20px] mx-[1.5em] p-[1.5em] ">
@@ -50,7 +50,7 @@ const Menu=(props)=>{
     )
 }
 // building the component of the cards for the menu section 
-const Menu1=(props)=>{
+const Menu1=(props:any)=>{
     return(
         <main className="menu pb-[1.5em] "  >
             {/* pass the background image a props  */}
@@ -82,7 +82,7 @@ const Menu1=(props)=>{
     )
 }
 // building the component of the cards for the menu section 
-const Menu2=(props)=>{
+const Menu2=(props:any)=>{
     return(
         <main className="menu pb-[1.5em] "  >
             {/* pass the background image a props  */}
