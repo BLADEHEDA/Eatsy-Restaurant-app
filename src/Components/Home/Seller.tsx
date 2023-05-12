@@ -15,7 +15,8 @@ const MenuBtn=(props:any)=>{
     return(
         <main className="btn"  >
             <button style={props.style} 
-            className="menu-btn rounded-[50%] py-[1.5em] px-[1.75em] border-2   border-[#e84242]  ">
+            className="menu-btn rounded-[50%] py-[1.5em] px-[1.75em] border-2 bg-transparent
+              border-[#e84242]  ">
             <div className="left1"> <FontAwesomeIcon className='text-[1em] text-[#e84242] ' icon={faPlus} /> </div>
        
             </button>
@@ -117,11 +118,12 @@ const Menu2=(props:any)=>{
 
 const Seller = () => {
   return (
-    <main className=' Seller Hero-main pb-[10em] '>
+    <main className=' Seller Hero-main pb-[10em] overflow-hidden '>
     <h1 className="sellers text-[#F4E6C0]  font-['Rakkas'] text-center  pb-[1em] ">Bestsellers</h1>
     <section className="menus-seller">
         <div className="seller-div-1">
-        <Menu type="BEEF" name="Bacon+Cheese" src={burger1} name1="+Green Burger" price="$6.00" specs="220gr / 600 cal" />
+        <Menu   
+        type="BEEF" name="Bacon+Cheese" src={burger1} name1="+Green Burger" price="$6.00" specs="220gr / 600 cal" />
         <Menu type="BEEF" name="Black Angus" src={burger2} name1="Burger" price="$12.00" specs="220gr / 600 cal" />
         <Menu1 style={{paddingTop:'20em'}} 
         backgroundImage={burger} type="VEGAN" name="Bøfsandwich"  price="$8.00" specs="220gr / 600 cal" />
