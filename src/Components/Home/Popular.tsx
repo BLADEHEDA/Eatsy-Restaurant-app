@@ -35,7 +35,11 @@ function PopularProps(props:any) {
 function Popular() {
   return (
     <main className="popular-main">
-
+    <PopularProps 
+    
+    />
+    <PopularProps/>
+    <PopularProps/>
     </main>
   );
 }
