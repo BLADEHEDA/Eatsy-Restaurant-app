@@ -9,7 +9,7 @@ import Navbar from './Components/Shared/Navbar'
 
 function App() {
   return (
-    <div className="Appx">
+    <div className="Appx bg-[white] ">
     <Navbar/>
     <Home/>
 
