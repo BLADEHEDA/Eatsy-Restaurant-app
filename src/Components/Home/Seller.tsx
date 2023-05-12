@@ -10,8 +10,8 @@ import burger5 from "/assets/product_08-640x640.jpg"
 import burger from "/assets/image_product_01.jpg"    
 import burgerA from "/assets/image_product_02.jpg"  
 import burgerB from "/assets/image_product_03.jpg"
-// the menu button  
-const MenuBtn=(props:any)=>{
+// the menu button   
+export const MenuBtn=(props:any)=>{
     return(
         <main className="btn"  >
             <button style={props.style} 
