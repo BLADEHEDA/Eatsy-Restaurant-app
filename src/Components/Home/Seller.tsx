@@ -115,7 +115,6 @@ const Menu2=(props:any)=>{
     )
 }
 
-
 const Seller = () => {
   return (
     <main className=' Seller Hero-main pb-[10em] overflow-hidden '>
@@ -132,15 +131,11 @@ const Seller = () => {
                  price="$11.00" specs="220gr / 600 cal" />
         <Menu type="MEALS" name="BaconBacon" src={burger3} name1="Cheeseburger" price="$8.00" specs="220gr / 600 cal" />
         <Menu type="CHICKEN" name="CrazyBeefTuna" src={burger4} name1="Burger" price="$13.00" specs="220gr / 600 cal" />
-        <Menu type="VEGAN" name="ShroomBacon" src={burger5} name1="Burger" price="$10.00" specs="220gr / 600 cal" />
-      
+        <Menu type="VEGAN" name="ShroomBacon" src={burger5} name1="Burger" price="$10.00" specs="220gr / 600 cal" />   
         <Menu2  style={{paddingTop:'1.5em'}}  backgroundImage={burgerB} type="MEALS"
          name="#stayhome kit: 6 mini burger + 6 Pack Kraft beer"  price="$22.00" specs="220gr / 600 cal" />
-     
-      
-       
-    </section>
-      
+            
+    </section>    
     </main>
   )
 }
