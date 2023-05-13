@@ -1,5 +1,6 @@
 import React from 'react';
 import { MenuBtn } from './Seller';
+import burgerB from "/assets/image_product_03.jpg"
 
 function PopularProps(props:any) {
   return (
@@ -36,7 +37,8 @@ function Popular() {
   return (
     <main className="popular-main">
     <PopularProps 
-    
+    style={{paddingTop: '1em' }}
+    backgroundImage={burgerB}
     />
     <PopularProps/>
     <PopularProps/>
