@@ -33,6 +33,7 @@ function PopularProps(props:any) {
   );
 }
 // gathering resources fro the wavy background 
+  // gather resources for the wavy backgeound 
 function Popular() {
   return (
     <main className="popular-main">
