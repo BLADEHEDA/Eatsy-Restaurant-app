@@ -12,7 +12,7 @@ function PopularProps(props:any) {
       backgroundRepeat: "no-repeat"
     }}
     >
-      
+
       <h1 className="title"> {props.title} </h1>
       <div className="container">
         <div className="img-cont">
@@ -32,7 +32,7 @@ function PopularProps(props:any) {
     </main>
   );
 }
-
+// gathering resources fro the wavy background 
 function Popular() {
   return (
     <main className="popular-main">
