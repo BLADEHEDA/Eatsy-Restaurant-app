@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHamburger, faTruck ,faGlassCheers } from '@fortawesome/free-solid-svg-icons'
 import bag from "../../../public/assets/homedelivery.png"
+import Home from "../../../public/assets/stay_home.png"
 
 const DeliverProp=(props:any)=>{
     return(
@@ -19,17 +20,19 @@ const DeliverProp=(props:any)=>{
 const Delivery = () => {
   return (
     <main>
-        <div className="img-part"
-          style={{
-            backgroundImage:`url(${bag})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat"
-          }}
-        >
-        {/* <img src={bag} alt="bag" /> */}
+        <section className="left">  
+        <div className="img-part bg-[#F5E7C1] pt-[5em]  ">
+        <img src={bag} alt="bag"  className=' bg-[g-[green]] ' />
         </div>
+        </section>
+
         <section className="main-section bg-[#F5E7C1] px-[1.5em] pt-[-1px] pb-[35em]">
+            <div className="pic pt-[4em] pb-[1em] ">
+                <img src={Home } alt="home-icon" className="img-pic" />
+            </div>
+            <h1 className="delivery-head  font-[600]  font-['Rakkas'] text-[#E84242]
+            text-[2.5em] pb-[1em]  ">Free delivery 7 days a week</h1>
+
         <DeliverProp
         icon={faHamburger}
         head="Choose Burger"
