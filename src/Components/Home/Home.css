@@ -10,5 +10,10 @@
         color: red;
         color: #F5E7C1;
     }
+    .v-line{
+        border-left:dotted 5px #EB5A5A;
+        height: 3em;
+        margin: 5px 2.5em;
+    }
 
 }
