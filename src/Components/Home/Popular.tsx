@@ -25,10 +25,11 @@ function PopularProps(props:any) {
          
         </div>
       </div>
-      <div className="popular-price">
-        <div className="popular-price-left">
-          <h1 className="price-div">{props.price} </h1>
-          <p className="qty-div"> {props.qty} </p>
+      <div className="popular-price bg-[white] flex w-[75%] rounded-[5em] 
+      py-[0.5em] pl-[2em] pr-[0.5em] justify-between  mt-[3em] mb-[5em] ">
+        <div className="popular-price-left mt-[0.75em] ">
+          <h1 className="price-div text-[black] text-[1.75em] font-[900] "  >$12.00 </h1>
+          <p className="qty-div text-[#121212] text-[0.85em] "> 220gr / 600 cal </p>
         </div>
         <div className="popular-price-right">
           <MenuBtn/>
@@ -44,12 +45,12 @@ function Popular() {
     <PopularProps 
     title="Best Local Tunaburger"
     />
-    {/* <PopularProps
+    <PopularProps
     title="World Famous Burger"
     />
        <PopularProps
     title="Popular ShroomBacon"
-    /> */}
+    />
     </main>
   );
 }
