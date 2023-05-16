@@ -13,5 +13,13 @@
         height: 3em;
         margin: 5px 2.5em;
     }
+    /* .none{
+        border: solid 1px black;
+        background-image:url('../../../public/assets/hero_home_02.jpg');
+        background-size: cover;
+          background-position: center;
+                      background-repeat: no-repeat;
+
+    } */
 
 }

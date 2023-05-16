@@ -4,6 +4,7 @@ import Seller from './Seller'
 import Popular from './Popular'
 import Delivery from './Delivery'
 import Reviews from './Reviews'
+import Follow from './Follow'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Popular/>
         <Delivery/>
         <Reviews/>
+        {/* <Follow/> */}
     </main>
   )
 }

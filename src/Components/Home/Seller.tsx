@@ -8,7 +8,7 @@ import burger3 from "/assets/product_04-640x640.jpg"
 import burger4 from "/assets/product_09-640x640.jpg"
 import burger5 from "/assets/product_08-640x640.jpg" 
 import burger from "/assets/image_product_00.jpg"    
-import burgerA from "/assets/image_product_01.jpg"  
+import burgerA from "/assets/image_product_02.jpg"  
 import burgerB from "/assets/image_product_03.jpg"
 // the menu button   
 export const MenuBtn=(props:any)=>{
