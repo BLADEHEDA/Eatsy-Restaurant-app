@@ -22,7 +22,7 @@ const ReviewsProp=(props:any)=>{
 const Reviews = () => {
   return (
     <main>
-        <section className="review-section bg-[#e84242]  pb-[5em] mt-[-1px]  ">
+        <section className="review-section bg-[#e84242]  pb-[3em] mt-[-3px]  ">
         <h1 className="Review-head  text-[6em] text-center  text-[#F4E6C0] leading-[0.75em] 
      font-['Rakkas']  pt-[1em] pb-[1.5em]  relative ">
         Reviews

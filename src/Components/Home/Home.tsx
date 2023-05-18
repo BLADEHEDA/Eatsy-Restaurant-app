@@ -14,7 +14,7 @@ const Home = () => {
         <Popular/>
         <Delivery/>
         <Reviews/>
-        {/* <Follow/> */}
+        <Follow/>
     </main>
   )
 }
