@@ -4,7 +4,8 @@ import hero from "../../../public/assets/hero_home_02.jpg"
 const Follow = () => {
   return (
     <main className='mb-[10em]' > 
-    <div className='follow mt-[-3.99em] pb-[20em]  ' 
+    <div className='follow mt-[-3.99em] pb-[10em] flex justify-center 
+    items-center w-full pt-[7em]  ' 
     style={  { 
         backgroundImage: `url(../../../public/assets/hero_home_02.jpg)`,
         backgroundSize: "cover",
@@ -13,7 +14,8 @@ const Follow = () => {
 }}
     >
       
-      <p className="text-[1.75em] text-[white] flex justify-center items-center w-full "> Give us a follow </p>
+      <p className="text-[1.5em] font-[700] text-[white] 
+      "> Give us a follow </p>
     </div>
     <svg 
         style={  { 
