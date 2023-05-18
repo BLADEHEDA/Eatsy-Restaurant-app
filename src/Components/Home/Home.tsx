@@ -5,6 +5,7 @@ import Popular from './Popular'
 import Delivery from './Delivery'
 import Reviews from './Reviews'
 import Follow from './Follow'
+import Location from './Location'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Delivery/>
         <Reviews/>
         <Follow/>
+        <Location/>
     </main>
   )
 }
