@@ -5,8 +5,7 @@ const Follow = () => {
   return (
     <main className='mb-[0em]' > 
     <div className='follow mt-[-3.99em] pb-[10em] flex justify-center 
-    items-center w-full pt-[7em] 
-    text-[1.5em] font-[700] text-[white]  ' 
+    items-center w-full pt-[7em]  ' 
     style={  { 
         backgroundImage: `url(../../../public/assets/hero_home_02.jpg)`,
         backgroundSize: "cover",
@@ -14,9 +13,9 @@ const Follow = () => {
         backgroundRepeat: "no-repeat"
 }}
     >
-      Give us a follow
-      {/* <p className="text-[1.5em] font-[700] text-[white] 
-      "> Give us a follow </p> */}
+      
+      <p className="text-[1.5em] font-[700] text-[white] 
+      "> Give us a follow </p>
     </div>
     <svg 
         style={  { 
