@@ -22,7 +22,7 @@ const ReviewsProp=(props:any)=>{
 const Reviews = () => {
   return (
     <main>
-        <section className="review-section bg-[#e84242]  pb-[3em] mt-[-3px]  ">
+        <section className="review-section bg-[#e84242]  pb-[3em]  ">
         <h1 className="Review-head  text-[6em] text-center  text-[#F4E6C0] leading-[0.75em] 
      font-['Rakkas']  pt-[1em] pb-[1.5em]  relative ">
         Reviews
@@ -54,7 +54,10 @@ const Reviews = () => {
         />
       </div>
         </section>
-        <svg   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e84242" fill-opacity="1" d="M0,64L60,69.3C120,75,240,85,360,80C480,75,600,53,720,53.3C840,53,960,75,1080,80C1200,85,1320,75,1380,69.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        {/* <svg   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#e84242" fill-opacity="1"
+           d="M0,64L60,69.3C120,75,240,85,360,80C480,75,600,53,720,53.3C840,53,960,75,1080,80C1200,85,1320,75,1380,69.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+           </svg> */}
     </main>
   )
 }
