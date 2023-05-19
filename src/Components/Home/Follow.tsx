@@ -7,7 +7,8 @@ const Follow = () => {
     <div className='follow mt-[-3.99em] pb-[10em] flex justify-center 
     items-center w-full pt-[7em]  ' 
     style={  { 
-        backgroundImage: `url(../../../public/assets/hero_home_02.jpg)`,
+      backgroundImage: `url(${hero})`,
+        // backgroundImage: `url(../../../public/assets/hero_home_02.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
