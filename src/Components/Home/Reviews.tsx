@@ -12,7 +12,7 @@ const ReviewsProp=(props:any)=>{
         <div className="img-div">
             <img src={props.src} alt="cureved image" />
         </div>
-        <p className="quote font-['Rakkas'] mt-[1.5em] font-[200] text-[2.75em] leading-[1.1em] ">
+        <p className="quote font-['Rakkas'] mt-[1.5em] font-[200] text-[2.65em] leading-[1.1em] ">
              <span> "</span> {props.quote }<span> "</span></p>
         <h5 className="signature mt-[0.5em] mb-[3em] "> {props.signature} </h5>
         </main>
