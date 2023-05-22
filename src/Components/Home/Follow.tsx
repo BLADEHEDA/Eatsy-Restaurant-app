@@ -1,5 +1,8 @@
 import React from 'react'
 import hero from "../../../public/assets/hero_home_02.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faPlus } from '@fortawesome/free-solid-svg-icons'
+import {faFacebook, faInstagram , faTwitter} from '@fortawesome/free-brands-svg-icons'
 
 const Follow = () => {
   return (
@@ -13,9 +16,23 @@ const Follow = () => {
         backgroundRepeat: "no-repeat"
 }}
     >
-      
+      <section> 
+      <article> 
       <p className="text-[1.5em] font-[700] text-[white] 
       "> Give us a follow </p>
+      </article>
+      <article className="icons-div flex justify-center pt-[1em] ">
+      <div className="icon">
+        <FontAwesomeIcon className='text-[2.3em]  text-[white] ' icon={ faFacebook} />
+        </div>
+      <div className="icon"> 
+      <FontAwesomeIcon className='text-[2.3em]  text-[white] ' icon={faTwitter } />
+      </div>
+      <div className="icon">
+      <FontAwesomeIcon className='text-[2.3em]  text-[white] ' icon={faInstagram } />
+      </div>
+      </article>
+      </section>
     </div>
     <svg 
         style={  { 
