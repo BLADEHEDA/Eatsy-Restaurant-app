@@ -38,7 +38,7 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
         <article className="inputbtn "> 
       <div className="inputdiv">
         <input type="email" placeholder='Enter Your Email' 
-        className="input p-3 rounded-[1.2em] mt-[1em] " />
+        className="input p-3 rounded-[1.2em] mt-[1em] bg-[white] text-[#ABABAB] " />
       </div>
       <div className="btn mt-5 ">
         <Button 
@@ -52,13 +52,13 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
         <article className="infos">
           <div className="infox flex">
             <div className="icon"> 
-            <FontAwesomeIcon className='text-[2.3em]  text-[white] ' icon={faMapMarkerAlt } />
+            <FontAwesomeIcon className='text-[2em]  text-[white] ' icon={faMapMarkerAlt } />
             </div>
             <div className="text"></div>
           </div>
           <div className="infox flex">
             <div className="icon"> 
-            <FontAwesomeIcon className='text-[2.3em]  text-[white] ' icon={faClock } />
+            <FontAwesomeIcon className='text-[1.7em]  text-[white] ' icon={faClock } />
             </div>
             <div className="text"></div>
           </div>
