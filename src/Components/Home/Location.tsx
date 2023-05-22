@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 
 const Location = () => {
   return (
-    <main className=' pb-[20em] bg-[#F5E7C1] px-[1.5em] ' >
+    <main className=' pb-[5em] bg-[#F5E7C1] px-[1.5em] ' >
       <section className="contetn  mt-[-1px]  pt-[5em] "> 
     <h1 className="text-[2.6em] text-[#E84242] font-['Rakkas'] font-[700] mb-[0.75em]
      " >Contactless delivery  available</h1>
@@ -53,6 +53,19 @@ const Location = () => {
 </MapContainer>
 </article>
      </section>
+
+     {/* <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="white" stroke="green" stroke-width="5">
+    <circle cx="40" cy="40" r="25" />
+    <circle cx="60" cy="60" r="25" />
+  </g>
+  <foreignObject x="20" y="20" width="100%" height="100%">
+    <div className="svg-div">
+      having a div inside the svg might be the only way to do this correctly, time permitting
+    </div>
+  </foreignObject>
+</svg> */}
+
     </main>
 
   )

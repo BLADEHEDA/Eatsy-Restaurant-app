@@ -6,7 +6,7 @@ import Delivery from './Delivery'
 import Reviews from './Reviews'
 import Follow from './Follow'
 import Location from './Location'
-import AnyReactComponent from './AnyReactComponent'
+import AnyReactComponent from '../Shared/Footer'
 
 const Home = () => {
   return (
