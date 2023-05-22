@@ -1,6 +1,10 @@
 import React from 'react';
 import herofooter from "/assets/hero_footer.jpg"
 import logo from "/assets/footer_logo.png"
+import Button from './Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faMapMarkerAlt, faClock } from '@fortawesome/free-solid-svg-icons'
+import {faFacebook, faInstagram , faTwitter} from '@fortawesome/free-brands-svg-icons'
 const Footer = () => {
   return (
     <main className='pb-[10em] '>
@@ -31,10 +35,35 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
         Stay informed about special offers </p>
         <p className='text-[white] font-[400] text-[1.1em] w-[80%] my-2 mx-auto leading-[1.2em] ' >
         Subscribe to our bews letter</p>
+        <article className="inputbtn "> 
       <div className="inputdiv">
         <input type="email" placeholder='Enter Your Email' 
         className="input p-3 rounded-[1.2em] mt-[1em] " />
       </div>
+      <div className="btn mt-5 ">
+        <Button 
+        style={{
+          padding:"0.75em 1.75em"
+        }}
+        text="Subscribe" />
+      </div>
+      </article>
+      <section className="info">
+        <article className="infos">
+          <div className="infox flex">
+            <div className="icon"> 
+            <FontAwesomeIcon className='text-[2.3em]  text-[white] ' icon={faMapMarkerAlt } />
+            </div>
+            <div className="text"></div>
+          </div>
+          <div className="infox flex">
+            <div className="icon"> 
+            <FontAwesomeIcon className='text-[2.3em]  text-[white] ' icon={faClock } />
+            </div>
+            <div className="text"></div>
+          </div>
+        </article>
+      </section>
       </section>
     </div>
     </main>
