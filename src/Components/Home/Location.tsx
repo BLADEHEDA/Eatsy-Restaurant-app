@@ -1,9 +1,12 @@
 import React from 'react'
 import "./Home.css"
+import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css';
 
 const Location = () => {
   return (
-    <main className='bg-[#F5E7C1] mt-[-1px] pb-[20em] px-[1.5em] pt-[5em] ' >
+    <main className=' pb-[20em] bg-[#F5E7C1] px-[1.5em] ' >
+      <section className="contetn  mt-[-1px]  pt-[5em] "> 
     <h1 className="text-[2.6em] text-[#E84242] font-['Rakkas'] font-[700] mb-[0.75em]
      " >Contactless delivery  available</h1>
           <div className="locate mb-[1em] ">
@@ -33,6 +36,22 @@ const Location = () => {
         <p className="locate-content ml-1 ">Closed</p>
         </div>
       </div>
+     </section>   
+     </section> 
+
+     <section className="map ">
+      <article className='bg-[white] p-4 rounded-[1em]' > 
+<MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+  <TileLayer
+    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  />
+  <Marker position={[51.505, -0.09]}>
+    <Popup>
+      A pretty CSS3 popup. <br /> Easily customizable.
+    </Popup>
+  </Marker>
+</MapContainer>
+</article>
      </section>
     </main>
 

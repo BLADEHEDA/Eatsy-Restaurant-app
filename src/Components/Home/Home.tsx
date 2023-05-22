@@ -6,6 +6,7 @@ import Delivery from './Delivery'
 import Reviews from './Reviews'
 import Follow from './Follow'
 import Location from './Location'
+import AnyReactComponent from './AnyReactComponent'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Reviews/>
         <Follow/>
         <Location/>
+        {/* <AnyReactComponent/> */}
     </main>
   )
 }
