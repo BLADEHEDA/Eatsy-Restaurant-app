@@ -27,10 +27,10 @@ const Reviews = () => {
      font-['Rakkas']  pt-[1em] pb-[1.5em]  relative ">
         Reviews
       </h1>
-      <div className="nmnm  ">
+      <article className="nmnm  ">
         <img src={burger1} alt="" className="hero-img w-[25em] relative bottom-[14em] " />
-      </div>
-      <div className="consume mt-[-13em] px-[1.5em] ">
+      </article>
+      <article className="consume mt-[-13em] px-[1.5em] ">
         <ReviewsProp
         src={bent1}
         quote="I don't remember a single mouthful I didn't enjoy!"
@@ -52,7 +52,7 @@ const Reviews = () => {
         quote="Awesome service and even better burgers!"
         signature="@honeyb"
         />
-      </div>
+      </article>
         </section>
     </main>
   )
