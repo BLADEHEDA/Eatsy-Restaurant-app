@@ -14,7 +14,7 @@ import insta6 from "/assets/insta6.jpg"
 
 const Footer = () => {
   return (
-    <main className='pb-[10em] '>
+    <main className=''>
 <svg 
  style={  { 
   backgroundImage: `url(${herofooter})`,
@@ -67,13 +67,13 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
         <article className="infos">
           <div className="infox flex mb-2">
             <div className="icon"> 
-            <FontAwesomeIcon className='text-[2em] text-[14.5px] mr-3  text-[white] ' icon={faMapMarkerAlt } />
+            <FontAwesomeIcon className='text-[18px] mr-3  text-[white] ' icon={faMapMarkerAlt } />
             </div>
             <div className="text text-[white] ">60 East 65th Street, NY</div>
           </div>
           <div className="infox flex mb-2">
             <div className="icon"> 
-            <FontAwesomeIcon className='text-[1.7em] text-[14.5px] mr-3   text-[white] ' icon={faClock } />
+            <FontAwesomeIcon className='text-[18px] mr-3 text-[white] ' icon={faClock } />
             </div>
             <div className="text text-[white]"> 
             <p className="text1">Mon - Sat: 11AM - 11PM</p>
@@ -82,13 +82,13 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
           </div>
           <div className="infox flex mb-2">
             <div className="icon"> 
-            <FontAwesomeIcon className='text-[1.7em] text-[18px] mr-3   text-[white] '  icon={faBagShopping} />
+            <FontAwesomeIcon className=' text-[18px] mr-3 text-[white]'  icon={faBagShopping} />
             </div>
             <div className="text text-[white]">Mon - Sat: 01PM - 10PM</div>
           </div>
           <div className="infox flex mb-2">
             <div className="icon"> 
-            <FontAwesomeIcon className='text-[1.7em] text-[18px] mr-3   text-[white] '  icon={faShare } />
+            <FontAwesomeIcon className='text-[18px] mr-3  text-[white] '  icon={faShare } />
             </div>
             <div className="text text-[white]">1-800-700-600</div>
           </div> 
