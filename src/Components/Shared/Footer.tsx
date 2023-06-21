@@ -26,7 +26,7 @@ const Footer = () => {
 className='bg-[red] mt-[-0.3px] '
 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" fill-opacity="1" d="M0,256L48,218.7C96,181,192,107,288,117.3C384,128,480,224,576,245.3C672,267,768,213,864,197.3C960,181,1056,203,1152,181.3C1248,160,1344,96,1392,64L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 </svg>
-      <div className="container mt-[-1px] pt-[5em] pb-[10em]  "
+      <div className="container mt-[-1px] pt-[5em] pb-[4em]  "
        style={  { 
         backgroundImage: `url(${herofooter})`,
         backgroundSize: "cover",
@@ -147,11 +147,18 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
         </div>
         </article>
       </section>
-      <div className="line h-[0.3px] w-full bg-[white] mt-7 "></div>
-      <div className="rignts">
+      <div className="ml-7 mr-5 ">
+      <div className="line h-[0.3px] w-full bg-[white] my-7  "></div>
+      </div>
+      
+      <div className="rignts text-start ml-8">
         <div className="right text-[white]">©2021 BoldThemes All rights reserved</div>
-        <div className="right">
-          
+        <div className="right ">
+          <ul className='flex' >
+            <li className="right text-[white] underline mr-3 cursor-pointer ">About </li>  
+            <li className="right text-[white] underline mr-3 cursor-pointer ">Delivery</li>
+            <li className="right text-[white] underline mr-3 cursor-pointer ">Contact</li>
+          </ul>
         </div>
       </div>
       </section>
