@@ -13,6 +13,10 @@
         height: 3em;
         margin: 5px 2.5em;
     }
+    .email:focus{
+       outline:solid 2px #e84242;
+    }
+      
     /* .none{
         border: solid 1px black;
         background-image:url('../../../public/assets/hero_home_02.jpg');

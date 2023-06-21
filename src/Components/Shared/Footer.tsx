@@ -3,7 +3,7 @@ import herofooter from "/assets/hero_footer.jpg"
 import logo from "/assets/footer_logo.png"
 import Button from './Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faMapMarkerAlt, faClock } from '@fortawesome/free-solid-svg-icons'
+import {faMapMarkerAlt, faClock,faBagShopping,faShare } from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faInstagram , faTwitter} from '@fortawesome/free-brands-svg-icons'
 const Footer = () => {
   return (
@@ -38,30 +38,73 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
         <article className="inputbtn "> 
       <div className="inputdiv">
         <input type="email" placeholder='Enter Your Email' 
-        className="input p-3 rounded-[1.2em] mt-[1em] bg-[white] text-[#ABABAB] " />
+        className="input email p-4 rounded-[1.8em] mt-[1em] bg-[white] 
+        text-[black] w-[85%] text-[1.2em] 
+        " />
       </div>
       <div className="btn mt-5 ">
         <Button 
         style={{
-          padding:"0.75em 1.75em"
+        paddingLeft:"2.5em",
+        paddingRight:"2.5em",
+        paddingTop:"1em",
+        paddingBottom:"1em"
         }}
         text="Subscribe" />
       </div>
       </article>
-      <section className="info">
+      
+      <section className="info ml-7 ">
+      <h2 className='text-[#EB5A5A] text-[1.1em] mt-[7em] text-start mb-3  ' >LET’S GET TOGETHER</h2>
         <article className="infos">
-          <div className="infox flex">
+          <div className="infox flex mb-2">
             <div className="icon"> 
-            <FontAwesomeIcon className='text-[2em]  text-[white] ' icon={faMapMarkerAlt } />
+            <FontAwesomeIcon className='text-[2em] text-[14.5px] mr-3  text-[white] ' icon={faMapMarkerAlt } />
             </div>
-            <div className="text"></div>
+            <div className="text text-[white] ">60 East 65th Street, NY</div>
           </div>
-          <div className="infox flex">
+          <div className="infox flex mb-2">
             <div className="icon"> 
-            <FontAwesomeIcon className='text-[1.7em]  text-[white] ' icon={faClock } />
+            <FontAwesomeIcon className='text-[1.7em] text-[14.5px] mr-3   text-[white] ' icon={faClock } />
             </div>
-            <div className="text"></div>
+            <div className="text text-[white]"> 
+            <p className="text1">Mon - Sat: 11AM - 11PM</p>
+            <p className="text1 text-start">Sun: 11AM - 08PM</p>
+            </div>
           </div>
+          <div className="infox flex mb-2">
+            <div className="icon"> 
+            <FontAwesomeIcon className='text-[1.7em] text-[18px] mr-3   text-[white] '  icon={faBagShopping} />
+            </div>
+            <div className="text text-[white]">Mon - Sat: 01PM - 10PM</div>
+          </div>
+          <div className="infox flex mb-2">
+            <div className="icon"> 
+            <FontAwesomeIcon className='text-[1.7em] text-[18px] mr-3   text-[white] '  icon={faShare } />
+            </div>
+            <div className="text text-[white]">1-800-700-600</div>
+          </div> 
+        </article>
+           
+        <article className="icons flex mb-5">
+        <div className="icon w-[2em] h-[2em] flex justify-center p-2 mr-2 items-center rounded-full bg-[#EB5A5A]">
+          <FontAwesomeIcon
+            className="text-[1.7em] text-[18px] mx-auto text-[white]"
+            icon={faFacebook}
+          />
+       </div>
+       <div className="icon w-[2em] h-[2em] flex justify-center p-2 mr-2 items-center rounded-full bg-[#EB5A5A]">
+          <FontAwesomeIcon
+            className="text-[1.7em] text-[18px] mx-auto text-[white]"
+            icon={faTwitter}
+          />
+       </div>
+       <div className="icon w-[2em] h-[2em] flex justify-center p-2 items-center rounded-full bg-[#EB5A5A]">
+          <FontAwesomeIcon
+            className="text-[1.7em] text-[18px] mx-auto text-[white]"
+            icon={faInstagram}
+          />
+       </div>
         </article>
       </section>
       </section>
