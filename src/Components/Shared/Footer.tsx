@@ -5,6 +5,13 @@ import Button from './Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faMapMarkerAlt, faClock,faBagShopping,faShare } from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faInstagram , faTwitter} from '@fortawesome/free-brands-svg-icons'
+import insta1 from "/assets/insta1.jpg"
+import insta2 from "/assets/insta2.jpg"
+import insta3 from "/assets/insta3.jpg"
+import insta4 from "/assets/insta4.jpg"
+import insta5 from "/assets/insta5.jpg"
+import insta6 from "/assets/insta6.jpg"
+
 const Footer = () => {
   return (
     <main className='pb-[10em] '>
@@ -56,6 +63,7 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
       
       <section className="info ml-7 ">
       <h2 className='text-[#EB5A5A] text-[1.1em] mt-[7em] text-start mb-3  ' >LET’S GET TOGETHER</h2>
+      {/* info section */}
         <article className="infos">
           <div className="infox flex mb-2">
             <div className="icon"> 
@@ -85,8 +93,8 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
             <div className="text text-[white]">1-800-700-600</div>
           </div> 
         </article>
-           
-        <article className="icons flex mb-5">
+           {/* social media icons section */}
+        <article className="icons flex ">
         <div className="icon w-[2em] h-[2em] flex justify-center p-2 mr-2 items-center rounded-full bg-[#EB5A5A]">
           <FontAwesomeIcon
             className="text-[1.7em] text-[18px] mx-auto text-[white]"
@@ -106,7 +114,46 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
           />
        </div>
         </article>
+        {/* about us section */}
+        <article className="aboutus text-start  ">
+        <h2 className='text-[#EB5A5A] text-[1.1em] mt-[2em] text-start mb-3'>ABOUT US</h2>
+          <p className="about text-[white] mb-1 ">Our Story</p>
+          <p className="about text-[white] mb-1">Our Team</p>
+          <p className="about text-[white] mb-1">Our Food</p>
+          <p className="about text-[white] mb-1">Health Measures</p>
+          <p className="about text-[white] mb-1">Job Opportunities</p>
+        </article>
+        {/* choose menu sec tion  */}
+        <article className="aboutus text-start  ">
+        <h2 className='text-[#EB5A5A] text-[1.1em] mt-[2em] text-start mb-3'>QUICK MENU</h2>
+          <p className="about text-[white] mb-1 ">Beef Burgers</p>
+          <p className="about text-[white] mb-1">Chicken Burgers</p>
+          <p className="about text-[white] mb-1">lant-Based Burgers</p>
+          <p className="about text-[white] mb-1">Sides</p>
+          <p className="about text-[white] mb-1">Drinks</p>
+        </article>
+        {/* instagram section */}
+        <article className="aboutus text-start  mr-5  ">
+        <h2 className='text-[#EB5A5A] text-[1.1em] mt-[2em] text-start mb-3'>QUICK MENU</h2>
+        <div className="instatop flex justify.between">
+          <div className="insta mr-1"><img src={insta1} alt="insta1" className="instaimahe" /> </div>
+          <div className="insta mr-1"><img src={insta2} alt="insta2" className="instaimahe" /> </div>
+          <div className="insta "><img src={insta3} alt="insta3" className="instaimahe" /> </div>
+        </div>
+        <div className="instatop flex">
+          <div className="insta mr-1"><img src={insta4} alt="insta4" className="instaimahe" /> </div>
+          <div className="insta mr-1"><img src={insta5} alt="insta5" className="instaimahe" /> </div>
+          <div className="insta"><img src={insta6} alt="insta6" className="instaimahe" /> </div>
+        </div>
+        </article>
       </section>
+      <div className="line h-[0.3px] w-full bg-[white] mt-7 "></div>
+      <div className="rignts">
+        <div className="right text-[white]">©2021 BoldThemes All rights reserved</div>
+        <div className="right">
+          
+        </div>
+      </div>
       </section>
     </div>
     </main>
