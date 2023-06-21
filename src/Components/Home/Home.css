@@ -16,14 +16,5 @@
     .email:focus{
        outline:solid 2px #e84242;
     }
-      
-    /* .none{
-        border: solid 1px black;
-        background-image:url('../../../public/assets/hero_home_02.jpg');
-        background-size: cover;
-          background-position: center;
-                      background-repeat: no-repeat;
-
-    } */
 
 }
