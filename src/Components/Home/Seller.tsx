@@ -16,7 +16,7 @@ export const MenuBtn=(props:any)=>{
         <main className="btn"  >
             <button style={props.style} 
             className="menu-btn rounded-[50%] py-[1.5em] px-[1.75em] border-2 bg-transparent
-              border-[#e84242]  ">
+              border-[#e84242]   ">
             <div className="left1"> <FontAwesomeIcon className='text-[1em] text-[#e84242] ' icon={faPlus} /> </div>
        
             </button>
@@ -28,10 +28,15 @@ export const MenuBtn=(props:any)=>{
 const Menu=(props:any)=>{
     return(
         <main className="menu pb-[1.5em] ">
-            <section className="maini-menu-div bg-[#FEFEFE] rounded-[20px] mx-[1.5em] p-[1.5em] ">
+            <section className="maini-menu-div bg-[#FEFEFE] rounded-[20px] mx-[1.5em] p-[1.5em]
+            md:mx-[1.75em] ">
                 <p className="menu-type font-[400] text-[black] "> {props.type} </p>
-                <h1 className="menu-name text-[2em] font-[800] text-[#121212] ">{props.name} </h1>
-                <h1 className="menu-nam text-[2em] font-[800] text-[#121212]">{props.name1} </h1>
+                <div className="name  md:flex ">  
+                <h1 className="menu-name text-[2em] font-[800] text-[#121212]
+                md:text-[2.5em] ">{props.name} </h1>
+                <h1 className="menu-nam text-[2em] font-[800] text-[#121212]
+                 md:text-[2.5em] ">{props.name1} </h1>
+                </div>
                 <div className="menu-img-div">
                     <img src={props.src} alt={props.name} className="menu-img" />
                 </div>
@@ -53,21 +58,25 @@ const Menu=(props:any)=>{
 // building the component of the cards for the menu section 
 const Menu1=(props:any)=>{
     return(
-        <main className="menu pb-[1.5em] "  >
+        <main className="menu pb-[1.5em]  "  >
             {/* pass the background image a props  */}
-            <section className="maini-menu-div rounded-[20px] mx-[1.5em] p-[1.5em]  "
+            <section className="maini-menu-div rounded-[20px] mx-[1.5em] p-[1.5em]
+             md:h-[65em]   "
                 style={  { 
                     backgroundImage: `url(${props.backgroundImage})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat"
+                    backgroundRepeat: "no-repeat",
+                    
             }}
                   
                   > 
                 <p className="menu-type font-[400] text-[white] "> {props.type} </p>
-                <h1 className="menu-name text-[2em] font-[800] text-[white]   ">{props.name} </h1>
+                <h1 className="menu-name text-[2em] font-[800] text-[white] 
+                 md:text-[2.5em] ">{props.name} </h1>
                 <h1 className="menu-nam text-[2em] font-[800] text-[white] ">{props.name1} </h1>
-                <section className="menu-bottom flex justify-between" style={props.style} >   
+                <section className="menu-bottom flex justify-between
+                md:mt-[32em]  " style={props.style} >   
              
                 <article className="menu-left text-[white]  ">
                 <p className="menu-price text-[2em] font-[800]"> {props.price} </p>
@@ -83,24 +92,63 @@ const Menu1=(props:any)=>{
     )
 }
 // building the component of the cards for the menu section 
-const Menu2=(props:any)=>{
-    return( 
-        <main className="menu pb-[1.5em] "  >
+const Menu3=(props:any)=>{
+    return(
+        <main className="menu pb-[1.5em]  "  >
             {/* pass the background image a props  */}
-            <section className="maini-menu-div rounded-[20px] mx-[1.5em] p-[1.5em]  "
+            <section className="maini-menu-div rounded-[20px] mx-[1.5em] p-[1.5em]
+             md:h-[35em]   "
                 style={  { 
                     backgroundImage: `url(${props.backgroundImage})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat"
+                    backgroundRepeat: "no-repeat",
+                    
+            }}
+                  
+                  > 
+                <p className="menu-type font-[400] text-[white] "> {props.type} </p>
+                <h1 className="menu-name text-[2em] font-[800] text-[white] 
+                 md:text-[2.5em] ">{props.name} </h1>
+                <h1 className="menu-nam text-[2em] font-[800] text-[white] ">{props.name1} </h1>
+                <section className="menu-bottom flex justify-between
+                md:mt-[20em]  " style={props.style} >   
+             
+                <article className="menu-left text-[white]  ">
+                <p className="menu-price text-[2em] font-[800]"> {props.price} </p>
+                <p className="menu-specs text-[15px] mt-[-0.15em] "> {props.specs} </p>
+                </article>
+
+                <article className="menu-right">
+                    <MenuBtn  style={{background:"transparent"} } />
+                </article>
+                </section>
+            </section>
+        </main>
+    )
+}
+
+// building the component of the cards for the menu section 
+const Menu2=(props:any)=>{
+    return( 
+        <main className="menu pb-[1.5em] "  >
+            {/* pass the background image a props  */}
+            <section className="maini-menu-div rounded-[20px] mx-[1.5em] p-[1.5em] md:h-[38em]   "
+                style={  { 
+                    backgroundImage: `url(${props.backgroundImage})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    
+
             }}
                   
                   > 
                 <p className="menu-type font-[300] text-[white] "> {props.type} </p>
-                <h1 className="menu-name text-[1.5em] font-[800] text-[white]   ">{props.name} </h1>
-                <h1 className="menu-nam text-[2em] font-[800] text-[white] ">{props.name1} </h1>
-                <section className="menu-bottom flex justify-between" style={props.style} >   
-             
+                <h1 className="menu-name text-[1.5em] font-[800] text-[white] md:text-[2em]   ">{props.name} </h1>
+                <h1 className="menu-nam text-[2em] font-[800] text-[white]  ">{props.name1} </h1>
+                
+                <section className="menu-bottom flex justify-between md:mt-[22em] " style={props.style} >   
                 <article className="menu-left text-[white]  ">
                 <p className="menu-price text-[1.5em] font-[800]"> {props.price} </p>
                 <p className="menu-specs text-[15px] mt-[-0.15em] "> {props.specs} </p>
@@ -129,7 +177,7 @@ const Seller = () => {
         <Menu1 style={{paddingTop:'20em'}} 
         backgroundImage={burger} type="VEGAN" name="Bøfsandwich"  price="$8.00" specs="220gr / 600 cal" />
         </div>
-      <Menu1   style={{paddingTop:'7em'}} backgroundImage={burgerA} 
+      <Menu3   style={{paddingTop:'7em'}} backgroundImage={burgerA} 
                  price="$11.00" specs="220gr / 600 cal" />
         <Menu type="MEALS" name="BaconBacon" src={burger3} name1="Cheeseburger" price="$8.00" specs="220gr / 600 cal" />
         <Menu type="CHICKEN" name="CrazyBeefTuna" src={burger4} name1="Burger" price="$13.00" specs="220gr / 600 cal" />
