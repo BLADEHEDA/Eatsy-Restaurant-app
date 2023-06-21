@@ -148,7 +148,7 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
         </article>
       </section>
       <div className="ml-7 mr-5 ">
-      <div className="line h-[0.3px] w-full bg-[white] my-7  "></div>
+      <div className="line h-[0.3px] w-full bg-[white] my-7  opacity-70  "></div>
       </div>
       
       <div className="rignts text-start ml-8">

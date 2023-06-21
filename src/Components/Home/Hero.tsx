@@ -12,7 +12,7 @@ const Hero = () => {
         Delicious Burgers
       </h1>
       <div className="hero-img-div ">
-        <img src={burger} alt="" className="hero-img w-[25em] absolute top-[11em] " />
+        <img src={burger} alt="burger img" className="hero-img w-[25em] absolute top-[11em] " />
       </div>
       <div className="hero-border border-b border-[#eeeee] opacity-30  "></div>
       </section>
