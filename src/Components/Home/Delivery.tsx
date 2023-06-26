@@ -53,7 +53,7 @@ const Delivery = () => {
           <div className="v-line  "></div>
        <DeliverProp
         icon={faGlassCheers}
-        head="Enjoy Mealr"
+        head="Enjoy Meal"
         content="Praesent interdum mollis neque purus sed diam integer, in egestas nulla eget pede"
         />
         </article>
