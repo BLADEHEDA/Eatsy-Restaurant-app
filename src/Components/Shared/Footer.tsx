@@ -47,6 +47,7 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
         <input type="email" placeholder='Enter Your Email' 
         className="input email p-4 rounded-[1.8em] mt-[1em] bg-[white] 
         text-[black] w-[85%] text-[1.2em] 
+        md:w-[80%]
         " />
       </div>
       <div className="btn mt-5 ">
@@ -147,11 +148,11 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
         </div>
         </article>
       </section>
-      <div className="ml-7 mr-5 ">
-      <div className="line h-[0.3px] w-full bg-[white] my-7  opacity-70  "></div>
+      <div className="ml-7 mr-5 my-7 ">
+      <div className="line h-[0.3px] w-full bg-[white] opacity-70 md:hidden   "></div>
       </div>
       
-      <div className="rignts text-start ml-8">
+      <div className="rignts text-start ml-8  md:flex justify-between md:mr-[3em] ">
         <div className="right text-[white]">©2021 BoldThemes All rights reserved</div>
         <div className="right ">
           <ul className='flex' >
