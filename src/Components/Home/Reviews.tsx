@@ -12,7 +12,8 @@ const ReviewsProp=(props:any)=>{
         <div className="img-div">
             <img src={props.src} alt="cureved image" />
         </div>
-        <p className="quote font-['Rakkas'] mt-[1.5em] font-[200] text-[2.65em] leading-[1.1em] ">
+        <p className="quote font-['Rakkas'] mt-[1.5em] font-[200] text-[2.65em] leading-[1.1em] 
+        md:text-[3em]  ">
              <span> "</span> {props.quote }<span> "</span></p>
         <h5 className="signature mt-[0.5em] mb-[3em] "> {props.signature} </h5>
         </main>
@@ -24,13 +25,15 @@ const Reviews = () => {
     <main>
         <section className="review-section bg-[#e84242]  pb-[3em]  ">
         <h1 className="Review-head  text-[6em] text-center  text-[#F4E6C0] leading-[0.75em] 
-     font-['Rakkas']  pt-[1em] pb-[1.5em]  relative ">
+     font-['Rakkas']  pt-[1em] pb-[1.5em]  relative 
+     md:text-[10em] md:mt-[-0.65em] ">
         Reviews
       </h1>
       <article className="nmnm  ">
-        <img src={burger1} alt="" className="hero-img w-[25em] relative bottom-[14em] " />
+        <img src={burger1} alt="" className="hero-img w-[25em] relative bottom-[14em] 
+         md:w-[50em] md:mt-[-8em] " />
       </article>
-      <article className="consume mt-[-13em] px-[1.5em] ">
+      <article className="consume mt-[-13em] px-[1.5em]  md:mt-[-18em]  ">
         <ReviewsProp
         src={bent1}
         quote="I don't remember a single mouthful I didn't enjoy!"

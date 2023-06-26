@@ -28,14 +28,14 @@ function PopularProps(props:any) {
         <div className="img-cont mb-[1.5em] h-[5em] w-[5em] ">
           <img src={cow} alt={props.name} className="pic-elt" />
         </div>
-        <div className="popularprops-content text-start md:w-[68%]  "> 
+        <div className="popularprops-content text-start md:w-[75%]  "> 
         100% Grass fed beef patty,cheddar cheese,special sauce,tomato,pickies,
         lettuce,sessame seed bun
          
         </div>
       </div>
       <div className="popular-price bg-[white] flex w-[75%] rounded-[5em] 
-      py-[0.5em] pl-[2em] pr-[0.5em] justify-between  mt-[3em] mb-[5em] md:w-[45%] ">
+      py-[0.5em] pl-[2em] pr-[0.5em] justify-between  mt-[3em] mb-[5em] md:w-[35%] ">
         <div className="popular-price-left mt-[0.75em] ">
           <h1 className="price-div text-[black] text-[1.75em] font-[900] "  >$12.00 </h1>
           <p className="qty-div text-[#121212] text-[0.85em] "> 220gr / 600 cal </p>
