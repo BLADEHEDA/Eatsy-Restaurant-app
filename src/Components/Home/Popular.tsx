@@ -9,7 +9,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 function PopularProps(props:any) {
   return (
-    <main className="popularProps-main pt-[5em] text-[white] ml-7   "
+    <main className="popularProps-main pt-[5em] text-[white] ml-7 md:w-[70%]  "
     style={{
       backgroundImage:`url(${props.backgroundImage })`,
       backgroundSize: "cover",
@@ -30,12 +30,12 @@ function PopularProps(props:any) {
         </div>
       </div>
       <div className="popular-price bg-[white] flex w-[75%] rounded-[5em] 
-      py-[0.5em] pl-[2em] pr-[0.5em] justify-between  mt-[3em] mb-[5em] ">
+      py-[0.5em] pl-[2em] pr-[0.5em] justify-between  mt-[3em] mb-[5em] md:w-[45%] ">
         <div className="popular-price-left mt-[0.75em] ">
           <h1 className="price-div text-[black] text-[1.75em] font-[900] "  >$12.00 </h1>
           <p className="qty-div text-[#121212] text-[0.85em] "> 220gr / 600 cal </p>
         </div>
-        <div className="popular-price-right">
+        <div className="popular-price-right  ">
           <MenuBtn/>
         </div>
       </div>
@@ -60,12 +60,14 @@ function Popular() {
     </section> */}
      <section  className='popular-sect bg-[#121212]'>
         <Carousel
-          showThumbs={false}
           emulateTouch={false}
           showStatus={false}
           swipeable={false}
-          infiniteLoop={true}
-          showArrows={false}
+          showArrows={false} // Hide the navigation arrows
+          showThumbs={true} // Show the navigation dots
+          autoPlay={true} // Enable automatic slide change
+          interval={3000} // Set the time interval between slides (in milliseconds)
+          infiniteLoop={true} // Enable infinite loop
         >
           <div>
             <PopularProps title="Best Local Tunaburger" />
