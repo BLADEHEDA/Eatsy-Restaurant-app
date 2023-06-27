@@ -19,17 +19,15 @@ svg{
 .desktop-navbar{
   border: solid 1px black;
 }
-
- /* @media only screen and (min-width:912px ){
-.line{
-  display: block;
-}
-.footer{
-  width:100% ;
-  max-width:100;
-}
-.top-article{
-  display: flex;
-}
-
+/* .leff{
+  border: solid 1px blue; 
 } */
+
+.btn-desk:hover{
+  color: white;
+  background: #e84242;
+  border: solid 1px #e84242 ;
+}
+.navphone:hover{
+ color: #e84242;
+}
