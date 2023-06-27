@@ -22,9 +22,9 @@ const Hero = () => {
       md:mt-[7em] md:mb-1  md:opacity-0"></div>
       </section>
         {/* desktop home screen  */}
-      <section className="desktop hidden lg:block ">
+      <section className="desktop hidden lg:block lg:overflow-hidden lg:relative    ">
       <h1 className="hero-head text-[20em] text-center  text-[#F4E6C0] leading-[0.75em] 
-     font-['Rakkas']  pt-[0.65em] pb-[1.5em] relative  ">
+     font-['Rakkas']  pt-[0.65em] pb-[1.5em] ">
         Delicious Burgers
       </h1>
       <div className="hero-img-div ">
