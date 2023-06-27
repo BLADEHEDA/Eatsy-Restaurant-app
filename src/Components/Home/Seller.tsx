@@ -76,7 +76,7 @@ const Menu1=(props:any)=>{
                  md:text-[2.5em] ">{props.name} </h1>
                 <h1 className="menu-nam text-[2em] font-[800] text-[white] ">{props.name1} </h1>
                 <section className="menu-bottom flex justify-between
-                md:mt-[32em]  " style={props.style} >   
+                md:mt-[32em] lg:mt-[2.75em] " style={props.style} >   
              
                 <article className="menu-left text-[white]  ">
                 <p className="menu-price text-[2em] font-[800]"> {props.price} </p>
@@ -201,9 +201,22 @@ const Seller = () => {
         pecs="220gr / 600 cal" />
            </div>
         </article>
-      <Menu3   style={{paddingTop:'7em'}} backgroundImage={burgerA} 
-                 price="$11.00" specs="220gr / 600 cal" />
-        <Menu type="MEALS" name="BaconBacon" src={burger3} name1="Cheeseburger" price="$8.00" specs="220gr / 600 cal" />
+        <article className="sellerdiv2 ">
+        <Menu3   
+      style={{paddingTop:'7em'}} 
+      backgroundImage={burgerA} 
+      price="$11.00" 
+      specs="220gr / 600 cal" />
+
+        <Menu 
+        type="MEALS" 
+        name="BaconBacon" 
+        src={burger3} 
+        name1="Cheeseburger" 
+        price="$8.00" 
+        specs="220gr / 600 cal" />
+        </article>
+    
         <Menu type="CHICKEN" name="CrazyBeefTuna" src={burger4} name1="Burger" price="$13.00" specs="220gr / 600 cal" />
         <Menu type="VEGAN" name="ShroomBacon" src={burger5} name1="Burger" price="$10.00" specs="220gr / 600 cal" />
       
