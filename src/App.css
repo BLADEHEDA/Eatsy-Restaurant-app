@@ -31,3 +31,18 @@ svg{
 .navphone:hover{
  color: #e84242;
 }
+@keyframes floating {
+  0% {
+    transform: translateY(1em);
+  }
+  50% {
+    transform: translateY(-45px);
+  }
+  100% {
+    transform: translateY(1em);
+  }
+}
+
+.fries {
+  animation: floating 7s infinite ease-in-out;
+}

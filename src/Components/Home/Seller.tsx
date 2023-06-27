@@ -170,7 +170,7 @@ const Seller = () => {
     <main className=' Seller Hero-main pb-[2em] overflow-hidden '>
     <h1 className="sellers text-[#F4E6C0]  font-['Rakkas'] text-center  pb-[1em] ">Bestsellers</h1>
     <section className="menus-seller">
-        <div className="seller-div-1">
+        <div className="seller-div-1 lg:flex ">
         <Menu   
         type="BEEF" name="Bacon+Cheese" src={burger1} name1="+Green Burger" price="$6.00" specs="220gr / 600 cal" />
         <Menu type="BEEF" name="Black Angus" src={burger2} name1="Burger" price="$12.00" specs="220gr / 600 cal" />
