@@ -16,5 +16,8 @@
     .email:focus{
        outline:solid 2px #e84242;
     }
+    .blabla{
+        color:green;
+    }
 
 }

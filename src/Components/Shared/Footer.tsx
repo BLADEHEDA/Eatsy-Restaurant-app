@@ -12,6 +12,7 @@ import insta4 from "/assets/insta4.jpg"
 import insta5 from "/assets/insta5.jpg"
 import insta6 from "/assets/insta6.jpg"
 
+
 const Footer = () => {
   return (
     <main className=''>
@@ -32,6 +33,7 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5E7C1" f
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        width:'100%'
       }}
       >
         <section className='text-center' > 
