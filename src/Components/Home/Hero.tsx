@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Home.css"
 import burger from "/assets/floating_burger_01.png"
+import fries1 from "../../../public/assets/floating_fries_01.png"
+import fries2 from "../../../public/assets/floating_fries_02.png"
 
 const Hero = () => {
   return (
@@ -22,12 +24,17 @@ const Hero = () => {
         {/* desktop home screen  */}
       <section className="desktop hidden lg:block ">
       <h1 className="hero-head text-[20em] text-center  text-[#F4E6C0] leading-[0.75em] 
-     font-['Rakkas']  pt-[0.65em] pb-[1.5em]   ">
+     font-['Rakkas']  pt-[0.65em] pb-[1.5em] relative  ">
         Delicious Burgers
       </h1>
       <div className="hero-img-div ">
         <img src={burger} alt="" className="hero-img w-[78em] absolute top-[12.5em]
         left-1/2 transform -translate-x-1/2 " />
+      </div>
+      {/* section for flying chips */}
+      <div className="flyin">
+        <img src={fries1} alt="fries" className="fries absolute top-[32.5em] left-[-30em] " />
+        <img src={fries2} alt="fries" className="fries absolute top-[15.5em] right-[-26em]" />
       </div>
       <div className="hero-border border-b border-[#eeeee] opacity-30 lg:hidden  "></div>
       </section>
