@@ -27,18 +27,18 @@ export const MenuBtn=(props:any)=>{
 // BUilding the components for the diffferent menu elements and receiveing props through iit 
 const Menu=(props:any)=>{
     return(
-        <main className="menu pb-[1.5em] ">
+        <main className="menu pb-[1.5em]  ">
             <section className="maini-menu-div bg-[#FEFEFE] rounded-[20px] mx-[1.5em] p-[1.5em]
-            md:mx-[1.75em] ">
+            md:mx-[1.75em]  lg:h-[34em]  lg:w-[93%] ">
                 <p className="menu-type font-[400] text-[black] "> {props.type} </p>
-                <div className="name  md:flex ">  
+                <div className="name  md:flex lg:block ">  
                 <h1 className="menu-name text-[2em] font-[800] text-[#121212]
                 md:text-[2.5em] ">{props.name} </h1>
                 <h1 className="menu-nam text-[2em] font-[800] text-[#121212]
                  md:text-[2.5em] ">{props.name1} </h1>
                 </div>
                 <div className="menu-img-div">
-                    <img src={props.src} alt={props.name} className="menu-img" />
+                    <img src={props.src} alt={props.name} className="menu-img lg:w-[20em] " />
                 </div>
                 <section className="menu-bottom flex justify-between ">   
              
@@ -61,7 +61,7 @@ const Menu1=(props:any)=>{
         <main className="menu pb-[1.5em]  "  >
             {/* pass the background image a props  */}
             <section className="maini-menu-div rounded-[20px] mx-[1.5em] p-[1.5em]
-             md:h-[65em]   "
+             md:h-[65em] lg:h-[34em]   "
                 style={  { 
                     backgroundImage: `url(${props.backgroundImage})`,
                     backgroundSize: "cover",
@@ -133,7 +133,8 @@ const Menu2=(props:any)=>{
     return( 
         <main className="menu pb-[1.5em] "  >
             {/* pass the background image a props  */}
-            <section className="maini-menu-div rounded-[20px] mx-[1.5em] p-[1.5em] md:h-[38em]   "
+            <section className="maini-menu-div rounded-[20px] mx-[1.5em] p-[1.5em] md:h-[38em]
+               "
                 style={  { 
                     backgroundImage: `url(${props.backgroundImage})`,
                     backgroundSize: "cover",
@@ -148,7 +149,8 @@ const Menu2=(props:any)=>{
                 <h1 className="menu-name text-[1.5em] font-[800] text-[white] md:text-[2em]   ">{props.name} </h1>
                 <h1 className="menu-nam text-[2em] font-[800] text-[white]  ">{props.name1} </h1>
                 
-                <section className="menu-bottom flex justify-between md:mt-[22em] " style={props.style} >   
+                <section className="menu-bottom flex justify-between md:mt-[22em]
+               " style={props.style} >   
                 <article className="menu-left text-[white]  ">
                 <p className="menu-price text-[1.5em] font-[800]"> {props.price} </p>
                 <p className="menu-specs text-[15px] mt-[-0.15em] "> {props.specs} </p>
@@ -170,13 +172,35 @@ const Seller = () => {
     <main className=' Seller Hero-main pb-[2em] overflow-hidden '>
     <h1 className="sellers text-[#F4E6C0]  font-['Rakkas'] text-center  pb-[1em] ">Bestsellers</h1>
     <section className="menus-seller">
-        <div className="seller-div-1 lg:flex ">
-        <Menu   
-        type="BEEF" name="Bacon+Cheese" src={burger1} name1="+Green Burger" price="$6.00" specs="220gr / 600 cal" />
-        <Menu type="BEEF" name="Black Angus" src={burger2} name1="Burger" price="$12.00" specs="220gr / 600 cal" />
-        <Menu1 style={{paddingTop:'20em'}} 
-        backgroundImage={burger} type="VEGAN" name="Bøfsandwich"  price="$8.00" specs="220gr / 600 cal" />
-        </div>
+        <article className="seller-div-1 lg:flex lg:justify-between lg:mb-2 ">
+           <div className="sell1 lg:flex-[30%] ">
+           <Menu   
+        type="BEEF"
+        name="Bacon+Cheese" 
+        src={burger1} 
+        name1="+Green Burger" 
+        price="$6.00" 
+        specs="220gr / 600 cal" />
+           </div>
+           <div className="sell1 lg:flex-[30%] ">
+           <Menu 
+        type="BEEF" 
+        name="Black Angus" 
+        src={burger2} 
+        name1="Burger" 
+        price="$12.00" 
+        specs="220gr / 600 cal" />
+           </div>
+           <div className="sell1 lg:flex-[30%] ">
+           <Menu1 
+        style={{paddingTop:'20em'}} 
+        backgroundImage={burger} 
+        type="VEGAN" 
+        name="Bøfsandwich"  
+        price="$8.00" s
+        pecs="220gr / 600 cal" />
+           </div>
+        </article>
       <Menu3   style={{paddingTop:'7em'}} backgroundImage={burgerA} 
                  price="$11.00" specs="220gr / 600 cal" />
         <Menu type="MEALS" name="BaconBacon" src={burger3} name1="Cheeseburger" price="$8.00" specs="220gr / 600 cal" />
