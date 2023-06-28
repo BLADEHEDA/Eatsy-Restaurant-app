@@ -219,12 +219,41 @@ const Seller = () => {
         specs="220gr / 600 cal" />
             </div>
         </article>
-    
-        <Menu type="CHICKEN" name="CrazyBeefTuna" src={burger4} name1="Burger" price="$13.00" specs="220gr / 600 cal" />
-        <Menu type="VEGAN" name="ShroomBacon" src={burger5} name1="Burger" price="$10.00" specs="220gr / 600 cal" />
+        {/* thirde section */}
+    <article className="selldiv3 lg:flex">
+        <div className="sell3 lg:flex flex-[40%] ">
+            <div className="sell3a">
+        <Menu 
+        type="CHICKEN"
+         name="CrazyBeefTuna"
+         src={burger4} name1="Burger" 
+         price="$13.00" 
+         specs="220gr / 600 cal" />
+            </div>
+            <div className="sell3a">
+        <Menu 
+        type="VEGAN" 
+        name="ShroomBacon" 
+        src={burger5} 
+        name1="Burger" 
+        price="$10.00" s
+        pecs="220gr / 600 cal" />
+            </div>
+        </div>
+        <div className="sell3 flex-[60%]">    
+        <Menu2  
+        style={{paddingTop:'1.5em'}}  
+        backgroundImage={burgerB} 
+        type="MEALS"
+         name="#stayhome kit: 6 mini burger + 6 Pack Kraft beer"  
+         price="$22.00" 
+         specs="220gr / 600 cal" />
+         </div>
+    </article>
+ 
+
       
-        <Menu2  style={{paddingTop:'1.5em'}}  backgroundImage={burgerB} type="MEALS"
-         name="#stayhome kit: 6 mini burger + 6 Pack Kraft beer"  price="$22.00" specs="220gr / 600 cal" />       
+          
     </section>
     </main>
     <svg className='bg-[#121212] mt-[-1px] ' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#e84242" fill-opacity="1" d="M0,160L60,160C120,160,240,160,360,176C480,192,600,224,720,208C840,192,960,128,1080,117.3C1200,107,1320,149,1380,170.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
