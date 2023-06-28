@@ -33,9 +33,9 @@ const Menu=(props:any)=>{
                 <p className="menu-type font-[400] text-[black] "> {props.type} </p>
                 <div className="name  md:flex lg:block ">  
                 <h1 className="menu-name text-[2em] font-[800] text-[#121212]
-                md:text-[2.5em] ">{props.name} </h1>
+                md:text-[2.5em] lg:text-[1.8em] ">{props.name} </h1>
                 <h1 className="menu-nam text-[2em] font-[800] text-[#121212]
-                 md:text-[2.5em] ">{props.name1} </h1>
+                 md:text-[2.5em] lg:text-[1.8em] ">{props.name1} </h1>
                 </div>
                 <div className="menu-img-div">
                     <img src={props.src} alt={props.name} className="menu-img lg:w-[20em] " />
@@ -222,22 +222,22 @@ const Seller = () => {
         {/* thirde section */}
     <article className="selldiv3 lg:flex">
         <div className="sell3 lg:flex flex-[40%] ">
-            <div className="sell3a">
+            <div className="sell3a flex-[50%] h-50em ">
         <Menu 
         type="CHICKEN"
-         name="CrazyBeefTuna"
+        //  name="CrazyBeefTuna"
          src={burger4} name1="Burger" 
          price="$13.00" 
          specs="220gr / 600 cal" />
             </div>
-            <div className="sell3a">
+            <div className="sell3a flex-[50%]  ">
         <Menu 
         type="VEGAN" 
-        name="ShroomBacon" 
+        // name="ShroomBacon" 
         src={burger5} 
         name1="Burger" 
-        price="$10.00" s
-        pecs="220gr / 600 cal" />
+        price="$10.00" 
+        specs="220gr / 600 cal" />
             </div>
         </div>
         <div className="sell3 flex-[60%]">    
