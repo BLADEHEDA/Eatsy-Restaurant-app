@@ -69,8 +69,7 @@ const Menu1=(props:any)=>{
                     backgroundRepeat: "no-repeat",
                     
             }}
-                  
-                  > 
+                > 
                 <p className="menu-type font-[400] text-[white] "> {props.type} </p>
                 <h1 className="menu-name text-[2em] font-[800] text-[white] 
                  md:text-[2.5em] ">{props.name} </h1>
@@ -143,8 +142,7 @@ const Menu2=(props:any)=>{
                     
 
             }}
-                  
-                  > 
+                > 
                 <p className="menu-type font-[300] text-[white] "> {props.type} </p>
                 <h1 className="menu-name text-[1.5em] font-[800] text-[white] md:text-[2em]   ">{props.name} </h1>
                 <h1 className="menu-nam text-[2em] font-[800] text-[white]  ">{props.name1} </h1>
@@ -164,7 +162,6 @@ const Menu2=(props:any)=>{
         </main>
     )
 }
-
 
 const Seller = () => {
   return (
