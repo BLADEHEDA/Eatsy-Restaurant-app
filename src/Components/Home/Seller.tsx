@@ -28,8 +28,8 @@ export const MenuBtn=(props:any)=>{
 const Menu=(props:any)=>{
     return(
         <main className="menu pb-[1.5em]  ">
-            <section className="maini-menu-div bg-[#FEFEFE] rounded-[20px] mx-[1.5em] p-[1.5em]
-            md:mx-[1.75em]  lg:h-[38em] lg:w-[93%] ">
+            <section style={props.style}  className="maini-menu-div bg-[#FEFEFE] rounded-[20px] mx-[1.5em] p-[1.5em]
+            md:mx-[1.75em]  lg:h-full lg:w-[95%]  ">
                 <p className="menu-type font-[400] text-[black] "> {props.type} </p>
                 <div className="name  md:flex lg:block ">  
                 <h1 className="menu-name text-[2em] font-[800] text-[#121212]
@@ -40,7 +40,7 @@ const Menu=(props:any)=>{
                 <div className="menu-img-div">
                     <img src={props.src} alt={props.name} className="menu-img lg:w-[20em] " />
                 </div>
-                <section className="menu-bottom flex justify-between ">   
+                <section style={props.style} className="menu-bottom flex justify-between  ">   
              
                 <article className="menu-left">
                 <p className="menu-price text-[2em] font-[800]"> {props.price} </p>
@@ -172,9 +172,11 @@ const Seller = () => {
     <main className=' Seller Hero-main pb-[2em] overflow-hidden '>
     <h1 className="sellers text-[#F4E6C0]  font-['Rakkas'] text-center  pb-[1em] ">Bestsellers</h1>
     <section className="menus-seller">
-        <article className="seller-div-1 lg:flex lg:justify-between lg:mb-2 ">
-           <div className="sell1 lg:flex-[30%] ">
-           <Menu   
+        <article className="seller-div-1 lg:flex lg:justify-between lg:mb-2  lg:h-[38em]">
+           <div className="sell1 lg:flex-[30%]  ">
+           <Menu 
+           style={{height:'38em' }}  
+        
         type="BEEF"
         name="Bacon+Cheese" 
         src={burger1} 
@@ -184,6 +186,7 @@ const Seller = () => {
            </div>
            <div className="sell1 lg:flex-[30%] ">
            <Menu 
+             style={{height:'38em' }}
         type="BEEF" 
         name="Black Angus" 
         src={burger2} 
@@ -220,20 +223,21 @@ const Seller = () => {
             </div>
         </article>
         {/* thirde section */}
-    <article className="selldiv3 lg:flex">
+    <article className="selldiv3 lg:flex lg:h-[38em] ">
         <div className="sell3 lg:flex flex-[40%] ">
-            <div className="sell3a flex-[50%] h-50em ">
+            <div className="sell3a  ">
         <Menu 
         type="CHICKEN"
-        //  name="CrazyBeefTuna"
-         src={burger4} name1="Burger" 
+         name="CrazyBeefTuna"
+         src={burger4} 
+         name1="Burger" 
          price="$13.00" 
          specs="220gr / 600 cal" />
             </div>
-            <div className="sell3a flex-[50%]  ">
+            <div className="sell3a  ">
         <Menu 
         type="VEGAN" 
-        // name="ShroomBacon" 
+        name="ShroomBacon" 
         src={burger5} 
         name1="Burger" 
         price="$10.00" 
